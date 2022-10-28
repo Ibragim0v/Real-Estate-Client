@@ -1,0 +1,95 @@
+.room {
+  &__wrapper {
+    margin: 25px 0 0 100px;
+    display: flex;
+    justify-content: center;
+
+    h3 {
+      font-size: 2em;
+      font-weight: bold;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      input,
+      select {
+        width: 100%;
+        background: #e6e6e6;
+        color: #333;
+        letter-spacing: 0.5px;
+        padding: 14px 64px;
+        font-size: 1.1em;
+        border: none;
+        outline: none;
+        border-radius: 30px;
+      }
+    }
+  }
+
+  &__submit {
+    color: #fff;
+    padding: 14px 64px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background: linear-gradient(to right, #8b33c5, #15a0e1);
+    cursor: pointer;
+    font-size: 1.1em;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    transition: opacity 0.4s;
+  }
+
+  table {
+    border-collapse: collapse;
+    margin: 25px 0 0 100px;
+  }
+
+  th,
+  td {
+    border: 1px solid black;
+    padding: 10px 30px;
+    text-align: center;
+
+    button {
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+
+  &__cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__remove-btn {
+    background-color: rgb(151, 5, 5);
+  }
+  &__edit-btn {
+    background-color: rgb(6, 6, 105);
+  }
+
+  &__creation {
+    position: absolute;
+    padding: 10px 20px;
+    right: 20px;
+    top: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(20, 106, 15);
+    color: #fff;
+    font-size: 16px;
+  }
+}

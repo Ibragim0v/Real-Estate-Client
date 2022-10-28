@@ -1,0 +1,121 @@
+.login {
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &__side {
+    background: url("../../asserts/images/login-bk.png");
+    background-size: 100% 102%;
+
+    img {
+      width: 50%;
+      max-width: 50%;
+    }
+  }
+
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__container {
+    max-width: 450px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  &__separator {
+    width: 150px;
+    height: 4px;
+    background-color: #843bc7;
+    margin: 24px;
+  }
+
+  &__message {
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 28px;
+    margin-bottom: 30px;
+    color: #696969;
+  }
+
+  &__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form-control {
+    width: 100%;
+    position: relative;
+    margin-bottom: 24px;
+
+    input {
+      width: 100%;
+      background: #e6e6e6;
+      color: #333;
+      letter-spacing: 0.5px;
+      padding: 14px 64px;
+      font-size: 1.1em;
+      border: none;
+      outline: none;
+      border-radius: 30px;
+    }
+
+    input ~ .icon {
+      position: absolute;
+      top: 50%;
+      left: 32px;
+      transform: translateY(-50%);
+      color: #888;
+      transition: color 0.4s;
+    }
+  }
+  &__submit {
+    color: #fff;
+    padding: 14px 64px;
+    width: 32px auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background: linear-gradient(to right, #8b33c5, #15a0e1);
+    cursor: pointer;
+    font-size: 1.1em;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    transition: opacity 0.4s;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+/* ---- Responsiveness ---- */
+
+@media (max-width: 780px) {
+  .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__side {
+      img {
+        display: none;
+      }
+    }
+  }
+}

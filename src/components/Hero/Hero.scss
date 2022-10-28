@@ -1,0 +1,39 @@
+.hero {
+  padding: 4.5rem 0 3rem;
+  background: url("../../asserts/images/home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 440px;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+
+  &__container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__txt {
+    padding-left: 35px;
+
+    h1 {
+      color: #fff;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    a {
+      background-color: rgb(74, 74, 214);
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 20px;
+      font-weight: 500;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}
